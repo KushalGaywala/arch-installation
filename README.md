@@ -17,9 +17,9 @@
 	```
 - If no ping, then follow the next steps:
 - To start interactive prompt:
-```
-	iwctl
-```
+	```
+		iwctl
+	```
 - List available options:
 
 	```
@@ -47,13 +47,17 @@
  
 - List all wifi networks on that <device>:
   - First scan for the networks
-		- ```
-			station <device> scan
-		```
+  
+	```
+		station <device> scan
+	```
+  
   - List all the scanned networks
-		- ```
-			station <device> get-networks
-		```
+  
+	```
+		station <device> get-networks
+	```
+  
   - You can find all the SSID(Service Set IDentifier)/wifi-names
     - Note it down
   - Connect to the network
