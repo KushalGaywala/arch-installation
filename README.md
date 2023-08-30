@@ -85,3 +85,29 @@
 ```
 	timedatectl
 ```
+
+## Partition the disks
+
+1. To list the partitions
+	- Identify and notedown the <disk> you will use
+	
+		```
+			lsblk
+		```
+  
+2. Create partitions with `cgdisk`
+	
+ 	```
+ 		cgdisk /dev/<disk>
+ 	```
+
+3. When asked for start sector just hit `Enter`
+4. When asked for second sector type the size in MiB, GiB, ...
+5. When asked for type of partition type the code EF00, 8200, ...
+6. When asked for name type partition name to identify easily
+
+	- Recommended partitions with sizes
+| | boot | root | home | swap |
+| --- | --- | --- | --- | --- |
+| size | 1 GiB | 200 GiB | Remaining | half of RAM |
+| type | EF00(EFI) | 8300(Linux Filesystem) | 8300 | 8200(swap) |
