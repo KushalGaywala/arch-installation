@@ -9,7 +9,9 @@
 ## Connect to the internet
 
 - To check for the internet
-  - +```ip link```
+  ```
+    ip link
+  ```
 - If no ping, then follow the next steps:
 - To start interactive prompt:
   ```iwctl```
