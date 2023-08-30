@@ -40,12 +40,12 @@
 - List all wifi networks on that <device>:
   - First scan for the networks
 		- ```
-				station <device> scan
-			```
+			station <device> scan
+		```
   - List all the scanned networks
 		- ```
-				station <device> get-networks
-			```
+			station <device> get-networks
+		```
   - You can find all the SSID(Service Set IDentifier)/wifi-names
     - Note it down
   - Connect to the network
@@ -55,12 +55,12 @@
     - Enter it and you should be connected
     - You can also use `--passphrase` flag for the connecting
 			- ```
-					station --passphrase <passphrase> <devcie> connect <SSID>
-				```
+				station --passphrase <passphrase> <devcie> connect <SSID>
+			```
   - To check the connection,
 		- ```
-				station <device> show
-			```
+			station <device> show
+		```
 	- displays the status of the network (connecting, connected, or not connected)
   - check again with `ping` command
 
