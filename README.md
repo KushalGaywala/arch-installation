@@ -11,32 +11,32 @@
 ## Connect to the internet
 
 - To check for the internet
-  ```
-    ip link
-  ```
+```
+	ip link
+```
 - If no ping, then follow the next steps:
 - To start interactive prompt:
-  ```
-		iwctl
-	```
+```
+	iwctl
+```
 - List available options:
-  ```
-		help
-	```
+```
+	help
+```
 - For the network devices list
-  ```
-		device list
-	```
+```
+	device list
+```
 - In device list
   - you will find he name of the wireless network device
   - from now we will call it <device>
 - If the device/adapter is **off**, turn it on:
-  ```
-		device <device> set-property Powered on
-  ```
-  ```
-  	adapter <adapter> set-property Powered on
-	```
+```
+	device <device> set-property Powered on
+```
+```
+	adapter <adapter> set-property Powered on
+```
 - List all wifi networks on that <device>:
   - First scan for the networks
 ```
@@ -54,18 +54,18 @@
   - You will be prompted for a passphrase
     - Enter it and you should be connected
     - You can also use `--passphrase` flag for the connecting
-      ```
-				station --passphrase <passphrase> <devcie> connect <SSID>
-			```
+```
+	station --passphrase <passphrase> <devcie> connect <SSID>
+```
   - To check the connection,
-    ```
-    	station <device> show
-		```
+```
+	station <device> show
+```
     - displays the status of the network (connecting, connected, or not connected)
   - check again with
-    ```
-			ping
-		```
+```
+	ping
+```
 
 ## Update the system clock
 
