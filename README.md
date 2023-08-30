@@ -2,41 +2,49 @@
 
 ## Verify boot mode
 
-- ```
-		cat /sys/firmware/efi/fw_platform_size
-	```
+```
+	cat /sys/firmware/efi/fw_platform_size
+```
+
 - If 64 - UEFI mode (Good)
 - If nothing not in UEFI mode
 
 ## Connect to the internet
 
 - To check for the internet
-	- ```
-			ip link
-		```
+	```
+		ip link
+	```
 - If no ping, then follow the next steps:
 - To start interactive prompt:
-	- ```
-			iwctl
-		```
+```
+	iwctl
+```
 - List available options:
-	- ```
-			help
-		```
+
+	```
+		help
+	```
+ 
 - For the network devices list
-	- ```
-			device list
-		```
+
+	```
+		device list
+	```
+ 
 - In device list
   - you will find he name of the wireless network device
   - from now we will call it <device>
 - If the device/adapter is **off**, turn it on:
-	- ```
-			device <device> set-property Powered on
-		```
-	- ```
-			adapter <adapter> set-property Powered on
-		```
+
+	```
+		device <device> set-property Powered on
+	```
+
+	```
+		adapter <adapter> set-property Powered on
+	```
+ 
 - List all wifi networks on that <device>:
   - First scan for the networks
 		- ```
