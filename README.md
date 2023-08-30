@@ -73,9 +73,9 @@
   
   - To check the connection,
     
-		```
-			station <device> show
-		```
+	```
+		station <device> show
+	```
 
 	- displays the status of the network (connecting, connected, or not connected)
   - check again with `ping` command
