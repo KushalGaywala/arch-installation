@@ -82,6 +82,6 @@
 
 ## Update the system clock
 
-- ```
-  	timedatectl
-	```
+```
+	timedatectl
+```
