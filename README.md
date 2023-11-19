@@ -113,7 +113,7 @@ cgdisk /dev/<disk>
 | size | 1 GiB | 200 GiB | Remaining | half of RAM |
 | type | EF00(EFI) | 8300(Linux Filesystem) | 8300 | 8200(swap) |
 
-7. After craeting all of the partitions,
+7. After creating all of the partitions,
 - click `[write]` by navigating with `arrow keys` and `Enter`
 
 ### Format those partitions
